@@ -41,6 +41,7 @@ class Calculations {
         //!
         //+ Math operations in Java follow PEMDAS. However, parentheses do not indicate multiplication. 
         //+ Modulo % and multiplication * are both M in PEMDAS
+        //& Have students create and solve a math problem of their own
 
         int x = 5; 
         //@ This declares an integer variable called x and sets its value to 5.
@@ -55,13 +56,59 @@ class Calculations {
         //!
         //@ This assigns x to a new value of (x+1) and prints it out
 
-        System.out.println("I have "+ x +" things");
-        //+ Concatenation: 
-
         x+=1;
+        //+ In-Place Operators shorten the way you write x = x+ some number to x+= some number
         System.out.println(x);
         x++; 
+        //@ This is a shortened version of x=x+1
         System.out.println(x);
+        //!
+
+        x-=1; 
+        System.out.println(x);
+        x--;
+        System.out.println(x);
+        //@ In-Place Operators and -- instead of ++ work for subtraction like they work for addition
+        
+        //This is a comment 
+        //+ Single line comments can be made with a // preceding the comment
+        //+ Comments don't affect code, they are just helpful notes for the developer
+        /* */ 
+        //+ Multiline comments can be made with a /* preceding the comment and a */ ending it
+    
+        int a = 5; 
+        double b = 5.0; 
+        System.out.println(a/7); 
+        System.out.println(b/7);
+        //!
+        //+ When declaring a variable, the variable type (int, double, etc.) must be specified first 
+        //+ Variables cannot change their variable type, so an int cannot become a double
+        //+ ints are Integers which means they are numbers without decimals (..., -2, -1, 0, 1, 2, ...)
+        //+ doubles are 64-bit decimals, basically all real numbers including decimals 
+        //+ When an integer is divided by an integer, the stuff after the result's decimal point is removed/truncated
+
+        char c = 'c'; 
+        String d = "Code Future"; 
+        System.out.println(c); 
+        System.out.println(d); 
+        //!
+        //+ Strings are words and sentences while chars are single characters
+        //+ Strings are indicated by double quotes ""
+        //+ chars are indicated by single quotes ''
+
+        x= 1;
+
+        System.out.println("I have "+ x +" computer");
+        //!
+        //+ Concatenation: By using the + signs, Strings can be added together with other data types
+        
+        System.out.print("\"This is cool\"- Code Future\n");
+        //!
+        //+ Escape Characters - Special characters like "" used in Java can be used in print statements when preceded by \
+        //+ Newlines can be created in a String using \n
+
+        //& With the remaining time, challenge students to print out word problems and then print out their solutions to each other's problems
+        //& Make sure they use concatenation to print out solutions using both words and numbers, also have them use Java to do the calculations
     }
 
 }
